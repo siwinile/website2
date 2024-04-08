@@ -1,105 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio website</title>
+    <title>Portfolio Website</title>
     <script src="https://kit.fontawesome.com/6140d5223c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style2.css">
-    <!--swiper css-->
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
-
 <body>
     <header>
-        <!-- navbar start  -->
-        <div class="container">
-            
-                <div class="logo">
-                    <img src="logo (2).png" alt="logo" style="width: 120px;">
-                </div>
-                
-                <ul class="menu">
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about_section">about</a></li>
-                    <li><a href="#skill_section">skills</a></li>
-                    <li><a href="#projects_section">projects</a></li>
-                    <li><a href="#Testimonial_section">Testimonial</a></li>
-                    <li><a href="#contact_section">Contact</a></li>
-                    
+         <body>
+            <nav>
+              <div class="nav__content">
+                <div class="logo"><a href="#">Eucharistar</a></div>
+                <label for="check" class="checkbox">
+                  <i class="ri-menu-line"></i>
+                </label>
+                <input type="checkbox" name="check" id="check" />
+                <ul>
+                  <li><a href="#Home">Home</a></li>
+                  <li><a href="#about_section">About</a></li>
+                  <li><a href="#skill_section">Resume</a></li>
+                  <li><a href="#projects_section">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="search_bar">
-                    <input type="text" placeholder="Search">
-                    <div class="search_icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </nav>
+            <section class="section">
+              <div class="section__container">
+                <div class="content">
+                  <p class="subtitle">HELLO</p>
+                  <h1 class="title">
+                    I'm <span>Siwinile<br />a</span> Software developer
+                  </h1>
+                  <p class="description">
+                    hi
+                  </p>
+                  <div class="action__btns">
+                    <button class="hire__me">Hire Me</button>
+                    <button class="portfolio">Portfolio</button>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="now-removebg-preview.png" alt="profile" />
+                </div>
+              </div>
+            </section>
+            <section id="about_section" class="container">
+                <div class="about_info">
+                    <h1>About</h1>
+                    <div class="about_content">
+                        <div class="about_image">
+                            <img src="tshirt.png" alt="Siwinile Mdani">
+                        </div>
+                        <div class="about_text">
+                            <p>Hello, I am Siwinile Mdani, a recent graduate of Walter Sisulu University. I have completed a National Diploma in Information Technology, specializing in Software Development. I am a patient and hardworking individual with a deep passion for developing applications.</p>
+                            <p>During my time at university, I collaborated with my classmates on a project where we created an application called 'ComombidityApp.' This was the first application I developed, using Oracle Apex and C#. In addition to that, I have created also created numerous websites and games.</p>
+                            <p>I have come to realize that my true passion in the field of technology lies in software development. I am continuously working hard to undertake and complete various projects, driven by my unwavering dedication.</p>
+                            <p>Below is the link to the application I have developed: <a href="http://sites.google.com/view/commobidityapp/about?authuser=0">click here to access the link</a></p>
+                        </div>
                     </div>
                 </div>
-                
-              
-            
-            
-            <!-- hero section start  -->
-            <section id="home" class="container"></section>
-            <section class="hero_section">
-                <div class="row" id="full_row">
-                    <div class="col_hero_info">
-                        <h1>I'm<span class="animate"></span></h1>
-                        <p>I am an intern software developer. This website serves as my portfolio, where you can find information about my skills, testimonials, and experiences. Explore to learn more about me.</p>
-
-                        <div class="btn-container">
-                            <button
-                              class="btn btn-color-2"
-                              onclick="window.open('./assets/resume-example.pdf')"
-                            >
-                              Download CV
-                            </button>
-                            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                              Contact Info
-                            </button>
-                          </div>
-                        </div>
-                    
-                        <img src="now-removebg-preview.png">
-                       
-                
-                        </div>
-                       
-
-                           <!-- hero section end  -->
-                           <!-- Arrow Icon -->
-<img src="./down arrow.png" alt="Arrow icon" id="arrow-projects" class="arrow icon" />
-    </header>
-
-
-    <main>
-        <br>
-        <br>
-        <br>
-        
-        <!-- About section start  -->
-        <section id="about_section" class="container">
-            <div class="about_info">
-                <h1>About</h1>
-                    <p> "Hello, I am Siwinile Mdani, a recent graduate of Walter Sisulu University. I have completed a National Diploma in Information Technology, specializing in Software Development. I am a patient and hardworking individual with a deep passion for developing applications.<br><br><br> During my time at university, I collaborated with my classmates on a project where we created an application called 'ComombidityApp.' This was the first application I developed, using Oracle Apex and C#. In addition to that, I have created also created numerous websites and games.<br><br><br> I have come to realize that my true passion in the field of technology lies in software development. I am continuously working hard to undertake and complete various projects, driven by my unwavering dedication.<br><br><br><br>Below is the link to the application I have developed </div>
-
-                <div> <img src="tshirt.png"></div>
-                 
-                 
-                
-            
-            <a href="http://sites.google.com/view/commobidityapp/about?authuser=0">click here to acess the link</a>
-        </div>
-    </section>
-            <!--about-section end-->
-            <br></br>
-            <br></br>
-            <br></br>
-
-
+            </section>
         <!--skill section-->
 
 
@@ -187,24 +152,9 @@
         </div>
     
 
-
-    <br></br>
-    <br></br>
-    
 </section>
     <!--projects-->
-        <style>
-            /* Your existing styles remain here */
-            .portfolio-container {
-    display: inline-block;
-}
-        </style>
         <section id="projects_section" class="container"></section>
-
-        <!---projrct nav section-->
-  
-
-        <!--end-->
         <h2 class="portfolio-heading">My Projects</h2>
         <div class="portfolio-container bd-container-grip">
             
@@ -242,17 +192,8 @@
         </div>
         
     </section>  
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
- 
-    
 
-    
 
-</section>
     <!--project end-->
 
 
@@ -299,13 +240,7 @@
         
     </div>
     </div>
-</div>
-
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>    
+</div>  
         <!-- Contact section start -->
 
         <section class="contact" id="contact_section">
