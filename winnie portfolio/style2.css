@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  --primary-color: #7e2057;
-  --primary-color-dark: #f4cab7;
-  --secondary-color: #d8e2dc;
-  --text-dark: #1f2937;
-  --text-light: #6b7280;
-  --extra-light: #faf5ff;
+ 
   --max-width: 1200px;
 }
 
@@ -14,6 +9,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 a {
@@ -22,6 +18,7 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #ffe6e6;
 }
 
 nav {
@@ -34,7 +31,7 @@ nav {
 }
 
 .nav__content {
-  max-width: var(--max-width);
+  max-width: #ad88c6;
   margin: auto;
   padding: 1.5rem 1rem;
   display: flex;
@@ -45,11 +42,11 @@ nav {
 nav .logo a {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: #ffb5da;
   transition: 0.3s;
 }
 nav .logo a:hover {
-  color: var(--primary-color-dark);
+  color: #7469b6;
 }
 
 nav .checkbox {
@@ -78,14 +75,14 @@ ul li a {
   border: 2px solid transparent;
   text-decoration: none;
   font-weight: 600;
-  color: var(--text-dark);
+  color: #e1afd1;
   transition: 0.3s;
 }
 
 ul li a:hover {
-  border-top-color: var(--secondary-color);
-  border-bottom-color: var(--secondary-color);
-  color: var(--secondary-color);
+  border-top-color: #AD88C6;
+  border-bottom-color:#AD88C6;
+  color: #7469b6;
 }
 
 .section {
@@ -110,7 +107,7 @@ ul li a:hover {
 
 .subtitle {
   letter-spacing: 2px;
-  color: var(--text-light);
+  color:#e1afd1;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -119,17 +116,17 @@ ul li a:hover {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 3rem;
-  color: var(--text-dark);
+  color:grey;
   margin-bottom: 1rem;
 }
 
 .title span {
-  font-weight: 600;
+  font-weight:0;
 }
 
 .description {
   line-height: 1.5rem;
-  color: var(--text-light);
+  color: black;
   margin-bottom: 2rem;
 }
 
@@ -144,27 +141,27 @@ ul li a:hover {
   letter-spacing: 2px;
   padding: 1rem 2rem;
   outline: none;
-  border: 2px solid grey;
+  border: 2px solid #5e1675;
   border-radius: 10px;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .hire__me {
-  background-color: #98DAD9;
+  background-color: #e1afd1;
   color: #ffffff;
 }
 
 .hire__me:hover {
-  background-color: var(--primary-color-dark);
+  background-color: #7469b6;
 }
 
 .portfolio {
-  color: var(--primary-color);
+  color: #ffb5da;
 }
 
 .portfolio:hover {
-  background-color: var(--primary-color-dark);
+  background-color: #7469b6;
   color: #ffffff;
 }
 
@@ -225,18 +222,56 @@ ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left; /* Added text-align: left to align the text properly */
+    text-align: left;
+    background-color: #ffe6e6;
 }
 
 .about_image {
-    margin-right: 20px; /* Added margin-right to create space between the image and text */
+    margin-right: 20px; 
 }
 
 .about_text {
     max-width: 600px;
 }
+.about_info {
+    text-align: center; 
+}
 
+.about_info h1 {
+    margin-bottom: 20px;
+    color:#5e1675
+}
 
+.social_media_icons {
+    margin-top: 20px; 
+    font-size: 40px;
+}
+
+.social_media_icons a {
+    margin-right: 10px;
+}
+
+.social_media_icons a:last-child {
+    margin-right: 0; 
+}
+
+/* resposniveness */
+
+@media screen and (max-width: 768px) {
+    .about_content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about_image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .social_media_icons {
+        font-size: 30px;
+    }
+}
 
 
 /* Skill section style */
@@ -248,6 +283,7 @@ ul li a:hover {
     box-sizing: border-box;
     font-family: poppins;
 }
+
 .skills_section{
     width: 100%;
     height: 75vh;
@@ -270,11 +306,11 @@ ul li a:hover {
 .skills_head h2{
     font-size: 30px;
     margin-bottom: -5px;
-    color:#98DAD9;
+    color:#5e1675;
     
 }
 .skills_head h2 span{
-    color: #98DAD9;
+    color: #5e1675;
 }
 .skills_head p {
     font-size: 16px;
@@ -312,7 +348,7 @@ ul li a:hover {
     width: 50%;
     height: 100%;
     position: absolute;
-    background-color: #98DAD9;
+    background-color: #7469b6;
     border-radius: 25px;
 }
 .skill_bar .bar .html{
@@ -414,6 +450,10 @@ ul li a:hover {
     max-width: 1200px; 
     margin: 0 auto; 
   }
+  .portfolio-heading {
+    text-align: center;
+    color:#5e1675
+}
   
   .portfolio-card {
     width: 375px; 
@@ -426,7 +466,8 @@ ul li a:hover {
     position: relative; 
     height: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+    margin-bottom: 40px;
+    border-radius: 50px;
   }
   
   .portfolio-card:hover {
@@ -441,8 +482,9 @@ ul li a:hover {
     left: 0;
     width: 100%; 
     height: 0%; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white;
+    background-color: rgba(255, 255, 255, 0.555); 
+    color:#f28585;
+    font-weight: bold;
     text-align: center;
     transition: opacity 1.9s ease; 
   }
@@ -464,113 +506,15 @@ ul li a:hover {
     }
 }
 
-  
-
-
-
-
-
-
-
-
-
-
-
 
 /* project section end*/
 
 
 
-/* Testimonial Section */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 60px;
-}
 
-    h1 {
-        color: #98DAD9; 
-        font-family: 'Arial', sans-serif;
-        font-size: 36px; 
-        margin-bottom: 45px; 
-        text-align: center; 
-        margin-left: 100px;
-    }
+  
 
-
-
-.swiper-container {
-    width: 50%;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 30px;
-    box-shadow: 0 0 20px pink(0, 0, 0, 0.1);
-    padding: 50px;
-}
-
-
-.swiper-slide {
-    background-color:#d6d9db;
-    text-align: center;
-    padding: 0px;
-    border-radius: 10px;
-}
-
-.testimonial-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.testimonial-content img {
-    width: 200px;
-    height: 250px;
-    border-radius: 80%;
-    margin-bottom: 100px;
-}
-
-.swiper-slide .testimonial-content h3 {
-    color: #cdc7a6; 
-    font-size: 50px;
-    margin-bottom: 50px; 
-}
-.swiper-slide .testimonial-content p {
-    color: #ffffff;
-    font-size: 25px; 
-    margin-bottom: 2px; 
-}
-
-.swiper-pagination {
-    position: relative;
-    bottom: 10px;
-}
-
-.swiper-pagination-bullet {
-    background-color: #007bff;
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    margin: 0 5px;
-    border-radius: 50%;
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #004080;
-    opacity: 1;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: #007bff;
-    font-size: 18px;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    color: #004080;
-}
+  
 /* contact section style  */
 /*#contact_section{
     background-color:#3b565e;
@@ -600,7 +544,7 @@ body {
 #section-wrapper{
     width: 100%;
     padding: 10px;
-    background-color: #3b565e;
+    background-color: #ffe6e6;
 }
 .box-wrapper{
     position: relative;
@@ -624,7 +568,7 @@ body {
     text-align: left;
     font-size: 28px;
     letter-spacing: 0.5px;
-    color:#98DAD9;
+    color:#e1afd1;
 }
 .info-sub-title{
     font-size: 18px;
@@ -632,7 +576,7 @@ body {
     margin-top: 17px;
     letter-spacing: 0.5px;
     line-height: 26px;
-    color: #ffffff;
+    color: black;
 }
 .info-details {
     list-style: none;
@@ -644,17 +588,17 @@ body {
     color: #fff;
 }
 .info-details li i {
-    background: #98DAD9;
+    background: #e1afd1;
     padding: 12px;
     border-radius: 50%;
     margin-right: 5px;
 }
 .info-details li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 .info-details li a:hover {
-    color:#98DAD9;
+    color:#e1afd1;
 }
 .social-icons {
     list-style: none;
@@ -665,8 +609,8 @@ body {
     display: inline-block;
 }
 .social-icons li i {
-    background: #98DAD9;
-    color: #fff;
+    background: #e1afd1;
+    color:black;
     padding: 15px;
     font-size: 20px;
     border-radius: 22%;
@@ -676,7 +620,7 @@ body {
 }
 .social-icons li i:hover {
     background: #fff;
-    color:#128e74;
+    color:#7469b6;
 }
 .form-wrap{
     width:65%;
@@ -731,21 +675,21 @@ body {
     outline: none;
     border:none;
     cursor: pointer;
-    color:#fff;
+    color:black;
     text-align: center;
-    background: #98DAD9;
+    background: #ffb5da;
     box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
     transition: .5s;
 }
 .submit-button:hover{
-    background: #128e74;
+    background: #7469b6;
     #section {
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #3b565e;
-        color: #fff;
+        background-color: #ffb5da;
+        color: black;
     }}
 /* arrow_section*/
     #arrow-projects {
@@ -819,43 +763,36 @@ body {
     responsive area
 *********************/
 
-/* for mobile phone  */
-/* Mobile-first approach */
-/* Apply default styles for mobile devices */
-/* Adjustments can be made as per your design requirements */
-
-/* Your existing CSS code */
-
 /* Media queries for responsiveness */
 @media only screen and (min-width: 768px) {
-    /* Adjust styles for tablets and larger devices */
+    
     .container {
-        padding: 15px 30px; /* Increase padding for larger screens */
+        padding: 15px 30px; 
     }
 
     .col_hero_info {
-        width: 50%; /* Make the column wider on larger screens */
+        width: 50%; 
         max-width: 500px;
     }
 
     .col_hero_info h1 {
-        font-size: 40px; /* Increase font size for headings */
+        font-size: 40px;
     }
 
     .col_hero_info p {
-        font-size: 30px; /* Increase font size for paragraphs */
-        width: 100%; /* Make the paragraph width 100% */
-        padding: 30px 0; /* Adjust padding */
+        font-size: 30px; 
+        width: 100%; 
+        padding: 30px 0; 
     }
 
     .btn-container {
-        flex-direction: row; /* Change flex direction to row */
+        flex-direction: row; 
     }
 
     .btn {
-        width: auto; /* Allow buttons to adjust width based on content */
-        padding: 15px 30px; /* Adjust padding */
-        font-size: 20px; /* Adjust font size */
+        width: auto;
+        padding: 15px 30px;
+        font-size: 20px;
     }
 
     /* Add more responsive styles as needed */
@@ -892,7 +829,7 @@ body {
 }
 
 
-}
+
 
 /* contact section  */
 .contact_title h1::before,

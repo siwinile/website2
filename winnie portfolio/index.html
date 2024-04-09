@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="style2.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -37,7 +42,7 @@
                     I'm <span>Siwinile<br />a</span> Software developer
                   </h1>
                   <p class="description">
-                    hi
+                    Welcome to my homepage. Here, you'll find information about me and my work
                   </p>
                   <div class="action__btns">
                     <button class="hire__me">Hire Me</button>
@@ -61,8 +66,15 @@
                             <p>During my time at university, I collaborated with my classmates on a project where we created an application called 'ComombidityApp.' This was the first application I developed, using Oracle Apex and C#. In addition to that, I have created also created numerous websites and games.</p>
                             <p>I have come to realize that my true passion in the field of technology lies in software development. I am continuously working hard to undertake and complete various projects, driven by my unwavering dedication.</p>
                             <p>Below is the link to the application I have developed: <a href="http://sites.google.com/view/commobidityapp/about?authuser=0">click here to access the link</a></p>
+                            <div class="social_media_icons">
+                                <a href="#"><i class="fa-brands fa-square-facebook"></i>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <!-- Add more social media icons as needed -->
+                            </div>
                         </div>
                     </div>
+                 
                 </div>
             </section>
         <!--skill section-->
@@ -159,7 +171,7 @@
         <div class="portfolio-container bd-container-grip">
             
             <div class="portfolio-card">
-                <img src="renamed.jpg" alt="Financial Calculator Image" class="portfolio_img">
+                <img src="BankApp.jpg" alt="Financial Calculator Image" class="portfolio_img">
                 <div class="portfolio-details">
                     <span class="portfolio-container_subtitle">Financial Calculator</span>
                     <a href="#" class="portfolio_title">GitHub</a>
@@ -170,7 +182,7 @@
         </div>
         <div class="portfolio-container bd-container-grip">
             <div class="portfolio-card">
-                <img src="Custom-Software-Development.jpg" alt="Financial Calculator Image" class="portfolio_img">
+                <img src="website.jpg" alt="Financial Calculator Image" class="portfolio_img">
                 <div class="portfolio-details">
                     <span class="portfolio-container_subtitle">website </span>
                     <a href="#" class="portfolio_title">GitHub</a>
@@ -181,7 +193,7 @@
         </div>
         <div class="portfolio-container bd-container-grip">
             <div class="portfolio-card">
-                <img src="Depositphotos_212162574_s-2019.jpg" alt="Financial Calculator Image" class="portfolio_img">
+                <img src="financial calculator.jpg" alt="Financial Calculator Image" class="portfolio_img">
                 <div class="portfolio-details">
                     <span class="portfolio-container_subtitle">BankApp</span>
                     <a href="#" class="portfolio_title">GitHub</a>
@@ -195,52 +207,6 @@
 
 
     <!--project end-->
-
-
-    <!--testimonial-section-->
-
-    <div id="Testimonial_section" class="container">
-
- 
-
-    </div>
-        <h1>Testimonial</h1>
-    </div>     
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="testimonial-content">
-                    <img src="chuma_raxothi-removebg-preview (2).png" alt="Chuma Raxothi">
-                    <h3>Chuma Raxothi</h3>
-                    <p>Software Developer, Network Engineer</p>
-                    <p><span style="color:#5b8291"></span>Siwinile is an exceptionally dedicated and hardworking individual,during a challenging project at work, her consistently put in extra hours to ensure its success. 
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="testimonial-content">
-                    <img src="lihle.png" alt="Tembelihle Biyana">
-                    <h3>Tembelihle Biyana</h3>
-                    <p>Highly recommend their services!</p>
-                </div>
-                
-            </div>
-            <!-- Add more slides as needed -->
-            <div class="swiper-slide">
-            <div class="testimonial-content">
-                <img src="lihle.png" alt="Tembelihle Biyana">
-                <h3>Tembelihle Biyana</h3>
-                <p>Software developer</p>
-                <p>Siwinile is an exceptionally dedicated and hardworking individual,during a challenging project at work, her consistently put in extra hours to ensure its success. Her commitment was truly inspiring</p>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        </div>
-        
-    </div>
-    </div>
-</div>  
         <!-- Contact section start -->
 
         <section class="contact" id="contact_section">
@@ -305,12 +271,7 @@
             
                   
         </section>
-        <!-- Contact section end -->
-        <!-- footer section start  -->
-        <div class="footer">
-            <h1>"Thanks for Scrolling"</h1>
-        </div>
-        <!-- footer section end  -->
+      
         
 
 
@@ -397,6 +358,20 @@
         });
     }
   
+
+    var swiper = new Swiper('.my-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 5000, // 5 seconds autoplay delay
+  },
+});
+
+
+
+
+
 </script>
   <script>
     document.getElementById('arrow-projects').addEventListener('click', function() {
